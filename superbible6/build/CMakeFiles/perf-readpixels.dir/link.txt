@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_LINUX -rdynamic "CMakeFiles/perf-readpixels.dir/src/perf-readpixels/perf-readpixels.cpp.o" -o bin/perf-readpixels   -L/repos/tutorials/superbible6/lib  -Wl,-rpath,/repos/tutorials/superbible6/lib lib/libsb6.a -lglfw6 -lGL -lrt -ldl 

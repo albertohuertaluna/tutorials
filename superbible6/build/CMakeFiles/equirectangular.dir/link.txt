@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_LINUX -rdynamic CMakeFiles/equirectangular.dir/src/equirectangular/equirectangular.cpp.o -o bin/equirectangular   -L/repos/tutorials/superbible6/lib  -Wl,-rpath,/repos/tutorials/superbible6/lib lib/libsb6.a -lglfw6 -lGL -lrt -ldl 

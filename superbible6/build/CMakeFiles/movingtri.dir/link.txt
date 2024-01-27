@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_LINUX -rdynamic CMakeFiles/movingtri.dir/src/movingtri/movingtri.cpp.o -o bin/movingtri   -L/repos/tutorials/superbible6/lib  -Wl,-rpath,/repos/tutorials/superbible6/lib lib/libsb6.a -lglfw6 -lGL -lrt -ldl 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_LINUX -rdynamic CMakeFiles/cubemapenv.dir/src/cubemapenv/cubemapenv.cpp.o -o bin/cubemapenv   -L/repos/tutorials/superbible6/lib  -Wl,-rpath,/repos/tutorials/superbible6/lib lib/libsb6.a -lglfw6 -lGL -lrt -ldl 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_LINUX -rdynamic CMakeFiles/simpleclear.dir/src/simpleclear/simpleclear.cpp.o -o bin/simpleclear   -L/repos/tutorials/superbible6/lib  -Wl,-rpath,/repos/tutorials/superbible6/lib lib/libsb6.a -lglfw6 -lGL -lrt -ldl 

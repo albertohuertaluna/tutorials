@@ -1,0 +1,1 @@
+/usr/bin/c++  -D_LINUX -rdynamic CMakeFiles/fragcolorfrompos.dir/src/fragcolorfrompos/fragcolorfrompos.cpp.o -o bin/fragcolorfrompos   -L/repos/tutorials/superbible6/lib  -Wl,-rpath,/repos/tutorials/superbible6/lib lib/libsb6.a -lglfw6 -lGL -lrt -ldl 

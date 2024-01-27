@@ -7,24 +7,8 @@ LINK_DIRECTORIES( ${CMAKE_SOURCE_DIR}/lib )
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(COMMON_LIBS sb6 glfw6 ${GLFW_LIBRARIES} GL rt dl)
 
-if(WIN32)
-set(COMMON_LIBS sb6 optimized GLFW_r32 debug GLFW_d32)
-elif (UNIX)
-set(COMMON_LIBS sb6 glfw ${GLFW_LIBRARIES} GL rt dl)
-else()
-set(COMMON_LIBS sb6)
-endif()
-
-IF(APPLE)
-  INCLUDE_DIRECTORIES(/System/Library/Frameworks)
-  FIND_LIBRARY(COCOA_LIBRARY Cocoa)
-  FIND_LIBRARY(OpenGL_LIBRARY OpenGL)
-  FIND_LIBRARY(IOKit_LIBRARY IOKit)
-  MARK_AS_ADVANCED(COCOA_LIBRARY OpenGL_LIBRARY)
-  SET(EXTRA_LIBS ${COCOA_LIBRARY} ${IOKit_LIBRARY} ${OpenGL_LIBRARY})
-  SET(EXTRA_LIBS ${EXTRA_LIBS} /usr/local/lib/libglfw.a)
-ENDIF(APPLE)
 
 set(COMMON_LIBS ${COMMON_LIBS} ${EXTRA_LIBS})
 
@@ -114,14 +98,14 @@ set(EXAMPLES
   wrapmodes
 )
 
-if (WIN32)
-  set(EXAMPLES ${EXAMPLES} win32raw)
-endif()
+#if (WIN32)
+#  set(EXAMPLES ${EXAMPLES} win32raw)
+#endif()
 
-#if(UNIX)
-#  add_executable(xraw src/xraw/xraw.c)
-#  target_link_libraries(xraw GL X11 m)
-#endif(UNIX)
+if(UNIX)
+  add_executable(xraw src/xraw/xraw.c)
+  target_link_libraries(xraw GL X11 m)
+endif(UNIX)
 
 foreach(EXAMPLE ${EXAMPLES})
   add_executable(${EXAMPLE} WIN32 src/${EXAMPLE}/${EXAMPLE}.cpp)
