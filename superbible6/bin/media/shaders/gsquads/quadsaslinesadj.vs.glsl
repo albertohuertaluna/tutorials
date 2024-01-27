@@ -21,5 +21,5 @@ void main(void)
                                  vec4(1.0, 1.0, 1.0, 1.0));
 
     gl_Position = mvp * vertices[(gl_VertexID + vid_offset) % 4];
-    vs_out.color = colors[(gl_VertexID + vid_offset) % 4];
+    vs_out.color = colors[gl_VertexID]; // colors[(gl_VertexID + vid_offset) % 4];
 }
