@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/chapter01.dir/scenebasic.cpp.o CMakeFiles/chapter01.dir/main.cpp.o -o chapter01  ../ingredients/libingredients.a /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 -ldl 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -fopenmp -D_LINUX -std=c++0x -rdynamic CMakeFiles/basicfbo.dir/src/basicfbo/basicfbo.cpp.o -o /repos/tutorials/superbible7/bin/basicfbo   -L/repos/tutorials/superbible7/lib  -Wl,-rpath,/repos/tutorials/superbible7/lib lib/libsb7.a -lglfw -lX11 -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lGL -lrt -ldl 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -DVK_USE_PLATFORM_XCB_KHR -DNOMINMAX -D_USE_MATH_DEFINES CMakeFiles/raytracingsbtdata.dir/raytracingsbtdata/raytracingsbtdata.cpp.o -o ../bin/raytracingsbtdata  /usr/lib/x86_64-linux-gnu/libxcb.so /usr/lib/x86_64-linux-gnu/libvulkan.so /usr/lib/x86_64-linux-gnu/libvulkan.so ../base/libbase.a /usr/lib/x86_64-linux-gnu/libxcb.so /usr/lib/x86_64-linux-gnu/libvulkan.so 

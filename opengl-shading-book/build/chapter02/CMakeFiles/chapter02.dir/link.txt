@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/chapter02.dir/main.cpp.o CMakeFiles/chapter02.dir/sceneseparable.cpp.o CMakeFiles/chapter02.dir/scenebasic_uniformblock.cpp.o CMakeFiles/chapter02.dir/scenebasic_attrib.cpp.o CMakeFiles/chapter02.dir/scenebasic_uniform.cpp.o -o chapter02  ../ingredients/libingredients.a /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 -ldl 
